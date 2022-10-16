@@ -1,0 +1,13 @@
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media screen and (min-width: 600px;){
+    input {
+
+    }
+
+    .container {
+
+    }
+}
