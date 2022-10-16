@@ -5,20 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container" id="header">
     <h1>All Your Memes Are Belong to Us</h1>
-    <p>Fill out the forms to create a meme!</p>
+    <p>Fill out the form to create a meme!</p>
     <form action="">
-      <label for="imagefile">Select image:</label><br>
-        <input type="file" id="imagefile" name="img"><br>
-      <label for="toptext">Top text:</label>
-        <input type="text" id="toptext" name="top" value=""><br>
-      <label for="bottomtext">Bottom text:</label>
-        <input type="text" id="bottomtext" name="bottom" value=""><br>
-      <input type="submit" value="Submit">
+      <label class="col-3 label" for="imagefile">Select image:</label>
+        <input class="col-9 file" type="file" id="imagefile" name="img"><br><br>
+      <label class="col-3 label" for="toptext">Top text:</label>
+        <input class="col-9 txtinput" type="text" id="toptext" name="top" value=""><br><br>
+      <label class="col-3 label" for="bottomtext">Bottom text:</label>
+        <input class="col-9 txtinput" type="text" id="bottomtext" name="bottom" value=""><br><br>
+      <center><input type="submit" value="Submit"></center>
     </form>
+  </div>
+
+
+  <div>
+
   </div>
 
 

@@ -1,13 +1,70 @@
+
+
 body {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-@media screen and (min-width: 600px;){
-    input {
-
+@media screen and (min-width: 601px) {
+    * {
+        box-sizing: border-box;
     }
+
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    [class*="col-"] {
+    float: left;
+    }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 
     .container {
-
+        background-color: blanchedalmond;
+        border-radius: 8px;
+        min-height:50vh;
+        padding-top: 20px;
     }
+
+    .container > h1, p {
+        text-align: center;
+    }
+
+    form {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .txtinput {
+        padding: 5px;
+    }
+
+    input[type=submit] {
+        background-color: white;
+        border: 3px solid rgb(225, 166, 39);
+        border-radius: 8px;
+        cursor:pointer;
+        padding: 5px 30px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 18px
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
 }
