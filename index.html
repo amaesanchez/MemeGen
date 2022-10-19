@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Meme Generator</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meme Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container" id="header">
+  <div class="header">
     <h1>All Your Memes Are Belong to Us</h1>
-    <p>Fill out the form to create a meme!</p>
-    <form action="">
+    <p id="caption">Fill out the form to create a meme!</p>
+    <form action="#" method="get" id="memeform">
       <label class="col-3 label" for="imagefile">Select image:</label>
-        <input class="col-9 file" type="file" id="imagefile" name="img"><br><br>
+        <input class="col-9" type="file" id="imagefile" name="img"><br><br>
       <label class="col-3 label" for="toptext">Top text:</label>
-        <input class="col-9 txtinput" type="text" id="toptext" name="top" value=""><br><br>
+        <input class="col-9" type="text" id="toptext" placeholder="???"><br><br>
       <label class="col-3 label" for="bottomtext">Bottom text:</label>
-        <input class="col-9 txtinput" type="text" id="bottomtext" name="bottom" value=""><br><br>
-      <center><input type="submit" value="Submit"></center>
+        <input class="col-9" type="text" id="bottomtext" placeholder="punchline 😎"><br><br>
+      <center><input id="generate" type="submit" value="Generate"></center>
     </form>
   </div>
 
 
-  <div>
-
+  <div class="output">
+    <div class="container">
+      <img class="memebg">
+      <p class="topcenter">come on bro</p>
+      <p class="bottomcenter">please</p>
+    </div>
+    <div class="container">
+      <img class="memebg" src="../Personal website/photos/me.jpeg">
+      <p class="topcenter">come on bro</p>
+      <p class="bottomcenter">please</p>
+    </div>
   </div>
 
-
+  <script src="script.js" defer></script>
 </body>
 </html>
