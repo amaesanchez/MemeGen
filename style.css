@@ -135,6 +135,7 @@ button {
 
     label {
         font-size: 13px;
+        padding-top:2px;
     }
 
     form {
