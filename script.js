@@ -58,5 +58,10 @@ form.addEventListener("submit", function(e) {
   currImg.value = '';
 });
 
+textSize.addEventListener('input', function(e) {
+  textSize.nextElementSibling.innerText = textSize.value
+})
+
+
 //currImg.addEventListener('change', function(e) {
 //})
