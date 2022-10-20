@@ -2,128 +2,162 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
 [class*="col-"] {
     float: left;
     }
 
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.output {
+    height:80vh;
+}
+
+
+.header {
+    background: rgb(255, 233, 200);
+    border:3px solid rgb(225, 166, 39);
+    border-radius: 8px;
+    padding-top: 20px;
+    min-height:54vh;
+}
+
+.header > h1, p {
+    text-align: center;
+}
+
+form {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+input[type=text] {
+    padding: 5px;
+}
+
+input[type=submit] {
+    font-size: 18px;
+    background-color: white;
+    border: 3px solid rgb(225, 166, 39);
+    border-radius: 8px;
+    cursor:pointer;
+    padding: 5px 30px;
+    text-align: center;
+    color: rgb(225, 166, 39);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 input[type=submit]:hover {
     border: 3px solid black;
     color: black;
 }
 
-@media screen and (min-width: 601px) {
+/* on submit */
+/* we want to create a parent div with this class */
+.container {
+    display: inline-block;
+    position:relative;
+    width:400px;
+    margin:15px;
+
+}
+
+/* we want to create a child img with this class */
+.memebg {
+    width:400px;
+}
+
+/* we want to create a child p with this class */
+.bottomcenter {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    fill: black;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+/* we want to create a child p with this class */
+.topcenter {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    fill: black;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+button {
+    position:absolute;
+    bottom: -25px;
+    left:0;
+    background-color: white;
+    border: 3px solid rgb(225, 166, 39);
+    border-radius: 8px;
+    color: rgb(225, 166, 39);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    padding:2px 5px;
+    cursor:pointer;
+}
+
+
+@media screen and (max-width: 600px) {
     .header {
         background: rgb(255, 233, 200);
+        border:3px solid rgb(225, 166, 39);
         border-radius: 8px;
         padding-top: 20px;
         min-height:50vh;
     }
 
-    .header > h1, p {
-        text-align: center;
+    h1 {
+        font-size: 22px;
+    }
+
+    .header > p {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 13px;
     }
 
     form {
-        padding-left: 150px;
-        padding-right: 150px;
-    }
-
-    input[type=text] {
-        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     input[type=submit] {
-        background-color: white;
-        border: 3px solid rgb(225, 166, 39);
-        border-radius: 8px;
-        cursor:pointer;
-        padding: 5px 30px;
-        margin-top: 10px;
-        text-align: center;
-        font-size: 18px;
-        color: rgb(225, 166, 39);
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 15px;
     }
 
-    /* delete this */
-    .img {
-        margin: 10px;
-        width: 300px;
-
-    }
-
-    .output {
-        height:100vh;
-    }
-
-    /* on submit */
+     /* on submit */
     /* we want to create a parent div with this class */
     .container {
-        display: inline-block;
-        position:relative;
-        width:400px;
-        margin: 15px;
-
+        width:90vw;
     }
 
     /* we want to create a child img with this class */
     .memebg {
-        width:400px;
-    }
-
-    /* we want to create a child p with this class */
-    .bottomcenter {
-        position: absolute;
-        bottom: -15px;
-        left: 50%;
-        transform: translate(-50%);
-        fill: black;
-        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
-    }
-
-    /* we want to create a child p with this class */
-    .topcenter {
-        position: absolute;
-        top: -15px;
-        left: 50%;
-        transform: translate(-50%);
-        fill: black;
-        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+        width:90vw;
     }
 
     button {
-        position:absolute;
-        bottom: -25px;
-        left:0;
-        background-color: white;
-        border: 3px solid rgb(225, 166, 39);
-        border-radius: 8px;
-        color: rgb(225, 166, 39);
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 0.8em;
-        padding:2px 5px;
-        cursor:pointer;
+        font-size: 0.6em;
     }
-}
-
-@media screen and (max-width: 600px) {
-
-
 }
