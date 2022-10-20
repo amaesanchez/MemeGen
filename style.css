@@ -50,7 +50,7 @@ input[type=text] {
     padding: 5px;
 }
 
-#textoutput {
+#sizeoutput {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
     margin-left: 3px;
@@ -81,7 +81,6 @@ input[type=submit]:hover {
     position:relative;
     width:400px;
     margin:15px;
-
 }
 
 /* we want to create a child img with this class */
@@ -97,6 +96,7 @@ input[type=submit]:hover {
     transform: translate(-50%);
     fill: black;
     text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+    inline-size: 350px;
 }
 
 /* we want to create a child p with this class */
@@ -107,6 +107,7 @@ input[type=submit]:hover {
     transform: translate(-50%);
     fill: black;
     text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+    inline-size: 350px;
 }
 
 button {
