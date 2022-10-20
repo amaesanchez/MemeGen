@@ -33,7 +33,7 @@ body {
     border:3px solid rgb(225, 166, 39);
     border-radius: 8px;
     padding-top: 20px;
-    min-height:54vh;
+    min-height:60vh;
 }
 
 .header > h1, p {
@@ -131,7 +131,7 @@ button {
         border:3px solid rgb(225, 166, 39);
         border-radius: 8px;
         padding-top: 20px;
-        min-height:50vh;
+        min-height:54vh;
     }
 
     h1 {
