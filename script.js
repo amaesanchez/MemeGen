@@ -7,7 +7,9 @@ const textSize = document.querySelector('#textsize');
 const form = document.querySelector('#memeform');
 const deleteBtns = document.querySelectorAll('div button');
 
-
+/** given image URL, fontsize, top and bottom text provided by user;
+ *  creates meme by formatting text over the user's image
+ */
 function generateMeme(url, fontsize, topText, bottomText) {
   // create new elements to append to output
   const newDiv = document.createElement('div');
@@ -46,7 +48,7 @@ outputdiv.addEventListener("click", function(e) {
   }
 });
 
-//creates meme on submit & clears the inputs
+//calls generatememe() on submit & clears the inputs
 form.addEventListener("submit", function(e) {
   e.preventDefault();
   const currFile = currImg.files['0']; //this is an object
