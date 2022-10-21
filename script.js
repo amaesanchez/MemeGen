@@ -1,3 +1,4 @@
+"use strict";
 const outputdiv = document.querySelector(".output");
 const currImg = document.querySelector('input[name="imagefile"]');
 const topText = document.querySelector('input[name="toptext"]');
