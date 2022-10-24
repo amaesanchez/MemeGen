@@ -3,8 +3,8 @@
 }
 
 @font-face {
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    src: url(/impact/impact.ttf);
+    font-family: Impact;
+    src: url('assets/impact.ttf');
   }
 
 [class*="col-"] {
