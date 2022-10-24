@@ -56,7 +56,7 @@ body {
   border: 3px solid rgb(225, 166, 39);
   border-radius: 8px;
   padding-top: 20px;
-  min-height: 55vh;
+  height: 385px;
 }
 
 .header > h1,
@@ -154,7 +154,7 @@ button {
     border: 3px solid rgb(225, 166, 39);
     border-radius: 8px;
     padding-top: 20px;
-    min-height: 50vh;
+    height: 350px;;
   }
 
   h1 {

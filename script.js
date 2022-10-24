@@ -41,6 +41,7 @@ function generateMeme(url, fontsize, topText, bottomText) {
   newDiv.append(newimg, top, bottom, btn);
 }
 
+
 //deletes entire div containing the meme
 outputdiv.addEventListener("click", function(e) {
   if (e.target.tagName === "BUTTON") { //tagName is a key in the target obj
