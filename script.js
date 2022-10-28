@@ -18,7 +18,6 @@ function generateMeme(url, fontsize, topText, bottomText) {
   const bottom = document.createElement('p');
   const btn = document.createElement('button')
 
-  // DEBUG, don't know how to extract input file
   newimg.src = url;
 
   // change classes to make meme
@@ -42,14 +41,14 @@ function generateMeme(url, fontsize, topText, bottomText) {
 }
 
 
-//deletes entire div containing the meme
+/** deletes entire div containing the meme */
 outputdiv.addEventListener("click", function(e) {
   if (e.target.tagName === "BUTTON") { //tagName is a key in the target obj
     e.target.parentElement.remove()
   }
 });
 
-//calls generatememe() on submit & clears the inputs
+/** calls generatememe() on submit & clears the inputs */
 form.addEventListener("submit", function(e) {
   e.preventDefault();
   const currFile = currImg.files['0']; //this is an object
@@ -62,6 +61,7 @@ form.addEventListener("submit", function(e) {
   currImg.value = '';
 });
 
+/** displays current text Size in 'real' time */
 textSize.addEventListener('input', function(e) {
   textSize.nextElementSibling.innerText = textSize.value
 })
