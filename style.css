@@ -49,7 +49,7 @@
 }
 
 body {
-  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 .output {
@@ -79,7 +79,7 @@ input[type="text"] {
 }
 
 #sizeoutput {
-  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
   font-size: 15px;
   margin-left: 3px;
   color: rgb(131, 131, 131);
@@ -94,7 +94,7 @@ input[type="submit"] {
   padding: 5px 30px;
   text-align: center;
   color: rgb(225, 166, 39);
-  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 input[type="submit"]:hover {
@@ -146,8 +146,7 @@ button {
   border: 3px solid rgb(225, 166, 39);
   border-radius: 8px;
   color: rgb(225, 166, 39);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
   font-size: 0.8em;
   padding: 2px 5px;
   cursor: pointer;
